@@ -1,4 +1,4 @@
-const TraineesModel = require('../models/trainees-model');
+const TraineesModel = require('../models/trainee-models');
 
 // READ all trainees
 async function readAllTrainees(req, res) {
