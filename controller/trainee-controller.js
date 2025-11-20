@@ -11,6 +11,7 @@ async function readAllTrainees(req, res) {
 }
 
 // READ a specific trainee (by name and email)
+
 async function readATrainee(req, res) {
   try {
     const { name = "", email = "" } = req.body || {};
@@ -38,8 +39,8 @@ async function addATrainee(req, res) {
 
     const trainee = new TraineesModel(req.body);
     await trainee.save();
-
     res.json({ message: "Trainee Added Successfully!" });
+    
   } catch (err) {
     const errorList = [];
 
